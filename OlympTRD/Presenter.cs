@@ -21,12 +21,19 @@ namespace OlympTRD
             form1 = form;
             form1.ClickUp += Form1_ClickUp;
             form1.ClickDown += Form1_ClickDown;
-            form1.Login += Form1_Login;
+            form1.ClickMinus += Form1_ClickMinus;
+            form1.ClickPlus += Form1_ClickPlus;
+        
         }
 
-        private void Form1_Login(object sender, EventArgs e)
+        private void Form1_ClickPlus(object sender, EventArgs e)
         {
-            model.Login();
+            model.InputControlsPlus();
+        }
+
+        private void Form1_ClickMinus(object sender, EventArgs e)
+        {
+            model.InputControlsMinus();
         }
 
         private void Form1_ClickDown(object sender, EventArgs e)
