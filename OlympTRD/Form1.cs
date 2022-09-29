@@ -26,7 +26,7 @@ namespace OlympTRD
         public event EventHandler ClickDown = null;
         public event EventHandler ClickPlus = null;
         public event EventHandler ClickMinus = null;
-        public event EventHandler AddMoney = null;
+     
 
         public Form1()
         {
@@ -92,8 +92,8 @@ namespace OlympTRD
         public void Login()
         {
             Thread.Sleep(5000);
-            string log = "shunko.trade@gmail.com";
-            string pass = "Amsterdam7Kolian";
+            string log = "";
+            string pass = "";
             firefox.FindElement(By.XPath("//button[@class='_633ZZh0WP6 jnFoUFrfoH']")).Click();
             Thread.Sleep(2000);
             firefox.FindElement(By.XPath("//input[@type='email']")).SendKeys(log);
